@@ -20,7 +20,9 @@ end
 
 # Write a function that returns the largest of 3 numbers
 # max_of_three
-def max_of_three
+def max_of_three num1, num2, num3
+	number = [num1, num2, num3]
+	number.max
 end
 
 # Write a function that returns the reverse a string 
