@@ -68,7 +68,8 @@ end
 # turn an array (with an even number of elements) into a hash, by
 # pairing up elements. e.g. ['a', 'b', 'c', 'd'] becomes
 # {'a' => 'b', 'c' => 'd'}
-def convert_array_to_a_hash
+def convert_array_to_a_hash 
+
 end
 
 # Write a functino that takes any number and returns a value based on these rules 
