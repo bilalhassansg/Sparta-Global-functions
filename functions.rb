@@ -13,7 +13,9 @@ end
 # Write a function that returns the smaller of 2 numbers
 # smallest_number
 
-def smallest_number
+def smallest_number num1, num2
+	number = [num1, num2]
+	number.min
 end
 
 # Write a function that returns the largest of 3 numbers
