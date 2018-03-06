@@ -27,7 +27,11 @@ end
 
 # Write a function that returns the reverse a string 
 # reverse_string
-def reverse_string 
+def reverse_string string1
+	string_array = [string1]
+	reverse_string = string_array.map do | word | 
+		word.reverse
+	end
 end
 
 # write a function that returns the year of birth from an age
@@ -37,7 +41,8 @@ end
 
 # write a fucntion that removes all ODD number from an array
 # remove_odd
-def remove_odd
+def remove_odd number
+
 end
 
 # write a fucntion that removes all EVEN number from an array
@@ -47,7 +52,12 @@ end
 
 # write a function that takes an array of strings and returns the string with the longest char langth
 # longest_string
-def longest_string 
+def longest_string string1
+
+	word_array = string1.split(" ")
+	word_array.sort! { | a, b | b.length <=> a.length}
+	word_array[0]
+
 end
 
 # discard the first 3 elements of an array, 
