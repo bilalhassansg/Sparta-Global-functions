@@ -28,26 +28,28 @@ end
 # Write a function that returns the reverse a string 
 # reverse_string
 def reverse_string string1
-	string_array = [string1]
-	reverse_string = string_array.map do | word | 
-		word.reverse
-	end
+	string_reverse = string1
+	string_reverse.reverse!
 end
 
 # write a function that returns the year of birth from an age
 # disemvowel
-def disemvowel
+def disemvowel string
+	string.chars.map { | char | "aeiouAEIOU".include?(char) ? nil : char }.join
 end
 
 # write a fucntion that removes all ODD number from an array
 # remove_odd
 def remove_odd number
 
+	number.select &:even?
+
 end
 
 # write a fucntion that removes all EVEN number from an array
 # remove_even
-def remove_even 
+def remove_even number1
+		number1.select &:odd?
 end
 
 # write a function that takes an array of strings and returns the string with the longest char langth
