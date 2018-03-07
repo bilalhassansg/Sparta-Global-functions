@@ -14,22 +14,24 @@ end
 # smallest_number
 
 def smallest_number num1, num2
-	number = [num1, num2]
-	number.min
+	# number = [num1, num2]
+	# number.min
+	[num1, num2].min
 end
 
 # Write a function that returns the largest of 3 numbers
 # max_of_three
 def max_of_three num1, num2, num3
-	number = [num1, num2, num3]
-	number.max
+	[num1, num2, num3].max
+
 end
 
 # Write a function that returns the reverse a string 
 # reverse_string
 def reverse_string string1
-	string_reverse = string1
-	string_reverse.reverse!
+	# string_reverse = string1
+	# string_reverse.reverse!
+	string1.reverse!
 end
 
 # write a function that returns the year of birth from an age
@@ -43,6 +45,9 @@ end
 def remove_odd number
 
 	number.select &:even?
+	# x = 10
+	# x.next
+	# x.succ
 
 end
 
@@ -64,13 +69,21 @@ end
 # discard the first 3 elements of an array, 
 # e.g. [1, 2, 3, 4, 5, 6] becomes [4, 5, 6]
 def all_elements_except_first_3 element
-	element.delete(2)
+	# array1 = element.reverse.take 4
+	# array1.reverse JOSH TRIED
+
+	# element.drop(3)
+	# element.shift(3)
+	# 3.times{ element.shift}
+	# element
+	element[3,element.length]
 end
 
 # turn an array (with an even number of elements) into a hash, by
 # pairing up elements. e.g. ['a', 'b', 'c', 'd'] becomes
 # {'a' => 'b', 'c' => 'd'}
-def convert_array_to_a_hash 
+def convert_array_to_a_hash array
+	Hash[*array]
 
 end
 
@@ -81,6 +94,15 @@ end
 # For numbers which are multiples of both three and five print "FizzBuzz".
 
 def fizz_buzz number 
+	if number % 3 == 0 && number % 5 == 0
+		"FizzBuzz"
+	elsif number % 5 === 0
+		"Buzz"
+	elsif number % 3 === 0
+		"Fizz"
+	else 
+		number 
+	end 
 end
 
 
