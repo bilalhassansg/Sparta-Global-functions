@@ -56,9 +56,8 @@ end
 # longest_string
 def longest_string string1
 
-	word_array = string1.split(" ")
-	word_array.sort! { | a, b | b.length <=> a.length}
-	word_array[0]
+	# string_array = string1
+	string1.max_by(&:length)
 
 end
 
