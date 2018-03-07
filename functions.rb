@@ -63,7 +63,8 @@ end
 
 # discard the first 3 elements of an array, 
 # e.g. [1, 2, 3, 4, 5, 6] becomes [4, 5, 6]
-def all_elements_except_first_3
+def all_elements_except_first_3 element
+	element.delete(2)
 end
 
 # turn an array (with an even number of elements) into a hash, by
